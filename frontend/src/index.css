@@ -1,0 +1,159 @@
+@import url('./vendor/normalize.css');
+@import url('./vendor/fonts.css');
+@import url('./blocks/page/page.css');
+@import url('./blocks/main/main.css');
+
+/*______________HEADER_____________*/
+
+@import url('./blocks/header/header.css');
+@import url('./blocks/header/__logo/header__logo.css');
+@import url('blocks/header/__authentication/header__authentication.css');
+
+@import url('blocks/header/__link/header__quit-link.css');
+@import url('blocks/header/__user-email/header__user-email.css');
+
+/*_____________PROFILE______________*/
+
+@import url('./blocks/profile/__add-button/profile__add-button.css');
+@import url('./blocks/profile/profile.css');
+@import url('./blocks/profile/__avatar/profile__avatar.css');
+@import url('./blocks/profile/__edit-button/profile__edit-button.css');
+@import url('./blocks/profile/__info/profile__info.css');
+@import url('./blocks/profile/__inner/profile__inner.css');
+@import url('./blocks/profile/__job/profile__job.css');
+@import url('./blocks/profile/__name/profile__name.css');
+@import url('./blocks/profile/__name-wrapper/profile__name-wrapper.css');
+@import url('./blocks/profile/__avatar-button/profile__avatar-button.css');
+
+/*_____________ELEMENTS______________*/
+
+@import url('./blocks/elements/elements.css');
+
+/*_____________ELEMENT______________*/
+
+@import url('./blocks/element/element.css');
+@import url('./blocks/element/__btn-like/element__btn-like.css');
+@import url('./blocks/element/__btn-like/_active/element__btn-like_active.css');
+@import url('./blocks/element/__img/element__img.css');
+@import url('./blocks/element/__rectangle/element__rectangle.css');
+@import url('./blocks/element/__title/element__title.css');
+@import url('./blocks/element/__delete-button/element__delete-button.css');
+@import url('./blocks/element/__like-counter/element__like-counter.css');
+@import url('./blocks/element/__like-counter/_active/element__like-counter_active.css');
+@import url('./blocks/element/__like-wrapper/elemetn__like-wrapper.css');
+
+/*_____________FOOTER______________*/
+
+@import url('./blocks/footer/footer.css');
+@import url('./blocks/footer/__copyright/footer__copyright.css');
+
+/*_____________POPUP______________*/
+
+@import url('./blocks/popup/popup.css');
+
+@import url('./blocks/popup/__title/popup__title.css');
+
+@import url('./blocks/popup/__close-btn/popup__close-btn.css');
+
+@import url('./blocks/popup/__container/popup__container.css');
+
+@import url('./blocks/popup/__form/popup__form.css');
+
+@import url('./blocks/popup/__input-text/popup__input-text.css');
+@import url('./blocks/popup/__input-text/_type/popup__input-text_type_error.css');
+
+@import url('./blocks/popup/_opened/popup_opened.css');
+
+@import url('./blocks/popup/__submit-btn/popup__submit-btn.css');
+
+@import url('./blocks/popup/__submit-btn/_disabled/popup__submit-btn_disabled.css');
+
+@import url('./blocks/popup/__container/_type/popup__container_type_photo.css');
+
+@import url('./blocks/popup/__image/popup__image.css');
+
+@import url('./blocks/popup/__text/popup__text.css');
+
+@import url('./blocks/popup/_type/popup_type_photo.css');
+
+@import url('./blocks/popup/__error/popup__error.css');
+@import url('./blocks/popup/__error/_visible/popup__error_visible.css');
+
+@import url('blocks/popup/__title/_info/popup__title_info.css');
+@import url('blocks/popup/__info-img/popup__info-img.css');
+
+
+
+/*_____________AUTHENTICATION______________*/
+@import url('./blocks/authentication/authentication.css');
+@import url('./blocks/authentication/__title/authentication__title.css');
+@import url('./blocks/authentication/__submit-btn/authentication__submit-btn.css');
+@import url('./blocks/authentication/__input-text/authentication__input-text.css');
+@import url('./blocks/authentication/__caption/authentication__caption.css');
+@import url('./blocks/authentication/__form/authentication__form.css');
+@import url('./blocks/authentication/__error/authentication__error.css');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

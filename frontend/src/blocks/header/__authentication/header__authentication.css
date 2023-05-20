@@ -1,0 +1,20 @@
+.header__authentication {
+    margin: 5px 0 0 0;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    transition: .3s;
+    display: flex;
+}
+
+
+@media screen and (max-width: 426px) {
+    .header__authentication {
+        font-size: 14px;
+        line-height: 17px;
+        margin: 7px 11px 0 0;
+    }
+}
+

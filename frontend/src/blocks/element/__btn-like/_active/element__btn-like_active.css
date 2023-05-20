@@ -1,0 +1,14 @@
+.element__btn-like_active {
+  background-color: transparent;
+  border: none;
+  background-image: url('../../../../images/main/element/__rectangle/like-active.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  object-fit: cover;
+  cursor: pointer;
+  transition: .5s ease;
+}
+
+.element__btn-like_active:hover {
+  opacity: 0.5;
+}

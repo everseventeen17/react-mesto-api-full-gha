@@ -1,0 +1,16 @@
+.authentication {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 60px auto;
+    max-width: 358px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 400px) {
+    .authentication {
+        margin: 40px auto;
+    }
+}
