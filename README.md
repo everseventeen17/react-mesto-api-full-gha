@@ -13,3 +13,5 @@ IP 51.250.82.167
 Frontend https://mesto1337.nomoredomains.monster/
 
 Backend https://api.mesto1337.nomoredomains.monster/
+
+ссылка на репозиторий https://github.com/everseventeen17/react-mesto-api-full-gha
