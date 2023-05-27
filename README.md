@@ -8,8 +8,8 @@
 
 ## Ссылки на проект
 
-IP-адрес x.x.x.x
+IP-адрес 51.250.82.167
 
-Frontend https://...
+Frontend https://mesto1337.nomoredomains.monster/
 
-Backend https://...
+Backend https://api.mesto1337.nomoredomains.monster/
