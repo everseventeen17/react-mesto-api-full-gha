@@ -17,7 +17,10 @@ class Api {
   // 1. Загрузка информации о пользователе с сервера
   getProfileData() {
     return fetch(`${this._link}users/me`, {
-      headers: this._headers,
+      headers: {
+        'Content-Type': 'application/json',
+        "Authorization": `Bearer ${localStorage.getItem('jwt')}`,
+      },
       method: 'GET',
     })
       .then(this._checkResponse)
@@ -26,7 +29,10 @@ class Api {
   // 2. Загрузка карточек с сервера
   getInitialCards() {
     return fetch(`${this._link}cards`, {
-      headers: this._headers,
+      headers: {
+        'Content-Type': 'application/json',
+        "Authorization": `Bearer ${localStorage.getItem('jwt')}`,
+      },
       method: 'GET',
     })
     .then(this._checkResponse)
@@ -35,7 +41,10 @@ class Api {
   // 3. Редактирование профиля
   patchProfileData({name, about}) {
     return fetch(`${this._link}users/me`, {
-      headers: this._headers,
+      headers: {
+        'Content-Type': 'application/json',
+        "Authorization": `Bearer ${localStorage.getItem('jwt')}`,
+      },
       method: 'PATCH',
       body: JSON.stringify({ name, about })
     })
@@ -45,7 +54,10 @@ class Api {
   // 4. Добавление новой карточки
   postNewCard({ name, link }) {
     return fetch(`${this._link}cards`, {
-      headers: this._headers,
+      headers: {
+        'Content-Type': 'application/json',
+        "Authorization": `Bearer ${localStorage.getItem('jwt')}`,
+      },
       method: 'POST',
       body: JSON.stringify({ name, link })
     })
@@ -55,7 +67,10 @@ class Api {
   // 5. Удаление карточки
   deleteCard(cardId) {
     return fetch(`${this._link}cards/${cardId}`, {
-      headers: this._headers,
+      headers: {
+        'Content-Type': 'application/json',
+        "Authorization": `Bearer ${localStorage.getItem('jwt')}`,
+      },
       method: 'DELETE',
     })
     .then(this._checkResponse)
@@ -65,7 +80,10 @@ class Api {
 
   changeLikeCardStatus(cardId, isLiked) {
     return fetch(`${this._link}cards/${cardId}/likes`, {
-      headers: this._headers,
+      headers: {
+        'Content-Type': 'application/json',
+        "Authorization": `Bearer ${localStorage.getItem('jwt')}`,
+      },
       method: isLiked ? 'DELETE' : 'PUT',
     })
     .then(this._checkResponse)
@@ -95,7 +113,10 @@ class Api {
   // 7. Обновление аватара пользователя
   patchAvatar(avatarUrl) {
     return fetch(`${this._link}users/me/avatar`, {
-      headers: this._headers,
+      headers: {
+        'Content-Type': 'application/json',
+        "Authorization": `Bearer ${localStorage.getItem('jwt')}`,
+      },
       method: 'PATCH',
       body: JSON.stringify(avatarUrl)
     })

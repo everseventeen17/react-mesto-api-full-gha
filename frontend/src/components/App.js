@@ -112,7 +112,7 @@ function App() {
         if (isAuthorized === true) {
             api.getInitialCards()
                 .then((data) => {
-                    setIsCards(data);
+                    setIsCards(data.reverse());
 
                 })
                 .catch((err) => {
@@ -122,7 +122,7 @@ function App() {
     }, [isAuthorized])
 
     function handleCardLike(card) {
-        const isLiked = card.likes.some(item => item._id === currentUser._id);
+        const isLiked = card.likes.some((i) => i === currentUser._id);
         api.changeLikeCardStatus(card._id, isLiked)
             .then((res) => {
                 setIsCards((state) => state.map((item) => item._id === card._id ? res : item));
@@ -144,8 +144,10 @@ function App() {
     }
 
     function handleUpdateUser({name, about}) {
+        console.log("changeUser")
         api.patchProfileData({name, about})
             .then(res => {
+                console.log(res)
                 setCurrentUser(res);
                 closeAllPopups();
             })
@@ -155,8 +157,10 @@ function App() {
     }
 
     function handleUpdateAvatar(avatar) {
+        console.log("changeAvatar")
         api.patchAvatar(avatar)
             .then(res => {
+                console.log(res)
                 setCurrentUser(res);
                 closeAllPopups();
             })
@@ -166,8 +170,10 @@ function App() {
     }
 
     function handleAddPlaceSubmit({name, link}) {
+        console.log("newCardPosting")
         api.postNewCard({name, link})
             .then(res => {
+                console.log(res)
                 setIsCards([res, ...cards]);
                 closeAllPopups();
             })
@@ -217,7 +223,7 @@ function App() {
                 .then((data) => {
                     if (data) {
                         setIsAuthorized(true);
-                        setEmail(data.data.email);
+                        setEmail(data.email);
                     }
                 }).catch((err) => {
                 console.error(err);

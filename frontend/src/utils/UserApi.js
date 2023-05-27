@@ -17,7 +17,9 @@ class UserApi {
 
     postRegister({email, password}) {
         return fetch(`${this._link}signup`, {
-            headers: this._headers,
+            headers: {
+                "Content-Type": "application/json",
+            },
             method: 'POST',
             body: JSON.stringify({email, password})
         })
@@ -27,7 +29,9 @@ class UserApi {
 
     postAuth({email, password}) {
         return fetch(`${this._link}signin`, {
-            headers: this._headers,
+            headers: {
+                "Content-Type": "application/json",
+            },
             method: 'POST',
             body: JSON.stringify({email, password})
         })
@@ -39,7 +43,7 @@ class UserApi {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
-                Authorization: `Bearer ${jwtToken}`,
+                "Authorization": `Bearer ${jwtToken}`,
             },
         }).then(this._checkResponse);
 

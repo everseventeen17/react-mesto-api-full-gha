@@ -9,13 +9,14 @@ const authError = (next) => {
 };
 
 module.exports = async (req, res, next) => {
-  const cookieAuth = req.cookies.jwt;
-  if (!cookieAuth) {
+  const { authorization } = req.headers;
+  if (!authorization || !authorization.startsWith('Bearer ')) {
     return authError(next);
   }
+  const token = authorization.replace('Bearer ', '');
   let payload;
   try {
-    payload = await jwt.verify(cookieAuth, JWT_SECRET);
+    payload = await jwt.verify(token, JWT_SECRET);
   } catch (err) {
     return authError(next);
   }

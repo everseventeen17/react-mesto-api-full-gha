@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="cfd0bc86-bb0a-4343-b28c-13e52b7dcdf9" name="mesto">
+      <webServer id="cfd0bc86-bb0a-4343-b28c-13e52b7dcdf9" name="mesto" url="https://">
         <fileTransfer rootFolder="/home/daniil/react-mesto-api-full-gha" accessType="SFTP" host="51.250.82.167" port="22" sshConfigId="429702d4-45b0-464f-851e-9de0a5407c7d" sshConfig="daniil@51.250.82.167:22 password">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
