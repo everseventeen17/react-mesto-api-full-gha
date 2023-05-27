@@ -39,12 +39,12 @@ app.use(auth);
 app.use('/users', usersRouter);
 app.use('/cards', cardsRouter);
 
-app.use(errorLogger); // подключаем логгер ошибок
-app.use(errors());
-
 app.use('*', (req, res, next) => {
   next(new NotFoundError('По указанному вами адресу ничего не найдено'));
 });
+
+app.use(errorLogger); // подключаем логгер ошибок
+app.use(errors());
 
 app.use(handleErrors);
 
