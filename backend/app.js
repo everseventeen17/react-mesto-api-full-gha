@@ -12,13 +12,13 @@ const cardsRouter = require('./routes/cards');
 const authRouter = require('./routes/auth');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
-const { PORT = 3000, MONGO_URL = 'mongodb://127.0.0.1:27017/mestodb'} = process.env;
+const { PORT = 3000, MONGO_URL = 'mongodb://127.0.0.1:27017/mestodb' } = process.env;
 // 127.0.0.1:27017
 const auth = require('./middlewares/auth');
 
 const app = express();
 
-mongoose.connect( MONGO_URL, {
+mongoose.connect(MONGO_URL, {
   autoIndex: true,
   useUnifiedTopology: true,
   useNewUrlParser: true,
